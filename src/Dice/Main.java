@@ -37,6 +37,23 @@ public class Main {
     }
 
     static String getString() {
+
+        /*
+            input: xDy+z
+
+            y -> the type of cubes to use
+            x -> number of dice rolls (if we roll once, this parameter is skipped)
+            z- > (optional) a number to add (or subtract) to the result of the throws
+
+            example input:
+
+            2D10+10 -> 2 throws using 10 wall cube and add 10 to the result
+            D6 -> simple throw using 6 wall cube
+            2D3 -> 2 throws using 3 wall cube
+            D12-1 -> simple throw using 12 wall cube and subtract 1 of the result
+
+         */
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Podaj kod: ");
